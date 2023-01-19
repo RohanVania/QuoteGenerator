@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding-inline:2rem;
+    --padding-block:2rem;
+    --quote-heading-size:2.2rem;
+    --quote-para-size:1.6rem;
+    --margin-inline:1rem;
+    --margin-block:1.2rem;
+    --author-size:1.4rem;
+    --quote-footer-padding:1.3rem;
+    --icons-size:1.2rem;
+}
+
+body{
+    background-image: linear-gradient( 109deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.quote-box{
+    background-color: white;
+    width: 70%;
+  box-shadow: -5px 5px 20px 1px blue, 5px -5px 20px 1px red;
+    margin-inline: auto;
+    border-radius: 15px;
+}
+
+.quote-heading{
+    text-align: center;
+    padding-block: var(--padding-block);
+    padding-inline: var(--padding-inline);
+    font-size: var(--quote-heading-size);
+    color: rgb(35, 35, 63);
+}
+
+
+.quote-para{
+    color: rgb(35, 35, 63);
+   font-size: var(--quote-para-size);
+    padding-inline: var(--padding-inline);
+}
+
+
+.quote-para i{
+    margin-inline: var(--margin-inline);
+}
+
+.quote-author{
+    color: rgb(35, 35, 63);
+    font-size: var(--author-size);
+ margin-block: var(--margin-block);
+    padding-inline: var(--padding-inline);
+    text-align: end;
+    font-style: italic;
+   
+}
+
+.hr-line{
+    margin-inline: auto;
+    width:93%;
+    height:1px;
+   
+}
+
+.quote-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+
+}
+
+.icons{
+    display: flex;
+    gap: 12px;
+    font-size: var(--icons-size);
+    color: rgb(35, 35, 63);
+   
+}
+
+.icons i{
+   
+    cursor: pointer;
+    border:1px solid rgb(35, 35, 63);;
+    padding: 12px 18px;
+    border-radius: 50%;
+    transition: 0.4s all ease;
+}
+
+.icons i:hover{
+    background-color: rgb(35, 35, 63);;
+    color: white;
+}
+
+.button-quote{
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    background-color:  rgb(35, 35, 63);;
+    padding: 1% 2%;
+    border-radius: 40px;
+    border: none;
+    transition: 0.4s;
+}
+
+.button-quote:hover{
+scale: 1.1;
+}
+
+.loading{
+    opacity: 0.7;
+    pointer-events: none;
+   
+}
+
+
+
+@media screen and (max-width:980px){
+    
+    :root{
+        --padding-inline:2rem;
+        --padding-block:2rem;
+        --quote-heading-size:2rem;
+        --quote-para-size:1.4rem;
+        --margin-inline:1rem;
+        --margin-block:1.2rem;
+        --author-size:1.4rem;
+        --quote-footer-padding:1.3rem;
+        --icons-size:1.2rem;
+    }
+
+.quote-box{
+   
+    width: 80%;
+}
+}
+
+
+@media screen and (max-width:590px){
+    
+    :root{
+        --padding-inline:2rem;
+        --padding-block:2rem;
+        --quote-heading-size:1.4rem;
+        --quote-para-size:1.2rem;
+        --margin-inline:1rem;
+        --margin-block:1.2rem;
+        --author-size:1.2rem;
+        --quote-footer-padding:1.3rem;
+        --icons-size:1rem;
+    }
+
+.quote-box{
+ 
+    width: 80%;
+}
+}
+
+@media screen and (max-width:399px){
+    
+    :root{
+        --padding-inline:0.7rem;
+        --padding-block:1.3rem;
+        --quote-heading-size:1.4rem;
+        --quote-para-size:1.2rem;
+        --margin-inline:1rem;
+        --margin-block:1.4rem;
+        --author-size:1.2rem;
+        --quote-footer-padding:1.3rem;
+        --icons-size:1rem;
+    }
+
+.quote-box{
+
+    width: 80%;
+}
+
+.quote-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-quote{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+}
